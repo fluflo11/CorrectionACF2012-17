@@ -9,6 +9,15 @@ Travail réalisé en collaboration avec :
 [@amaelkesteman](https://github.com/amaelkesteman)
 [@vuminh224](https://github.com/vuminh224)
 
+# Etat actuel
+
+- 2017 ✅ 
+- 2016 ❌
+- 2015 ❌
+- 2014 ❌
+- 2013 ❌
+- 2012 ❌
+
 # Disclaimers
 
 Le travail ici présent est réalisé de manière bénvole. L'exactitude des résultats n'est en aucun cas garantie !
