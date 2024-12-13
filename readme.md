@@ -1,13 +1,13 @@
 # Correction annales ACF
 
 Correction des examens des années 2012 à 2017 de la matière ACF enseignée par
-Thomas Genet et Thomas Anberree. 
+Thomas Genet et Thomas Anberree à l'ISTIC-Université de Rennes.
 
 La documentation complète des cours est disponible [ici](https://people.irisa.fr/Thomas.Genet/ACF/)
 
 Travail réalisé en collaboration avec :
-@amaelkesteman
-@vuminh224
+[@amaelkesteman](https://github.com/amaelkesteman)
+[@vuminh224](https://github.com/vuminh224)
 
 # Disclaimers
 
