@@ -41,8 +41,13 @@ lemma carons: "∀ k t. ¬ List.member  (map fst (remove k t)) k"
 lemma rtinique: "∀ k t a b. List.member (remove k t)  (a, b) ⟷ (List.member t  (a, b)  ∧ a ≠ k)"
   oops
 
+
 (*2.c*)
-lemma racas0 :"\<forall> k t v. " (*TODO*)
+lemma racas0 :"∀ k t. ∃v. List.member (map fst(modify k v t)) k"
+  oops
+
+(*2.d*)
+lemma tome: "∀k t v a b. List.member (modify k v t) (a, b) ⟷ (List.member t (a, b) ∧ a ≠ k)"
   oops
 
 end
