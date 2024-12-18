@@ -50,4 +50,17 @@ lemma racas0 :"∀ k t. ∃v. List.member (map fst(modify k v t)) k"
 lemma tome: "∀k t v a b. List.member (modify k v t) (a, b) ⟷ (List.member t (a, b) ∧ a ≠ k)"
   oops
 
+
+(*Exercice 3*)
+
+(*Q1*)
+datatype message = Print int string| Cancel int
+
+(* Type pour l'état de l'imprimante *)
+type_synonym printer_state = "(int * string) list × int list"
+
+fun newstate ::" printer_state ⇒ message list ⇒ printer_state" (*TODO*)
+  where 
+
+
 end
