@@ -57,27 +57,10 @@ lemma tome: "∀k t v a b. List.member (modify k v t) (a, b) ⟷ (List.member t 
 datatype message = Print int string| Cancel int
 
 (* Type pour l'état de l'imprimante *)
-type_synonym printer_state = "(int , string) map × int list"
+type_synonym printer_state = "(int * string) list × int list"
 
 fun newstate ::" printer_state ⇒ message list ⇒ printer_state" (*TODO*)
   where 
-  "newstate ((x#xs),print) [] = (xs,((fst x)#print))"|
-  "newstate (fileAttente, print) ((Cancel i)#xs) = 
-    newstate ((remove i fileAttente), print) xs" |
-  "newstate (fileAttente, print) ((Print i s)#xs) = 
-    newstate ((modify i  s fileAttente), print) xs"
-(* Ne pas tenir compte de l'indication Isabelle,
-le cas est contenu dans le dernier pattern*)
 
-
-(*Q3*)
-
-(* lemma b *)
-lemma ricots : " \<forall> fileAttente  print  i. (fst(fst fileAttente) = i)
- \<longrightarrow> (newstate (fileAttente, print) []) = newstate (remove fileAttente i), i#print)"
-
-
-(*lemma c)
-lemma carena  
 
 end
